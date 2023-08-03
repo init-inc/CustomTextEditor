@@ -12,7 +12,7 @@ import UIKit
 class NumberColorfulTextEditorController: UIViewController, UITextViewDelegate {
     
     // テキストエディター
-    @IBOutlet weak var textNumberColorful: UITextView!
+    @IBOutlet weak var numberColorfulText: UITextView!
     // プレースホルダ
     @IBOutlet weak var placeholder: UILabel!
     
@@ -22,15 +22,15 @@ class NumberColorfulTextEditorController: UIViewController, UITextViewDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
         // 初期値を代入
-        textNumberColorful.text = ""
+        numberColorfulText.text = ""
         // プレースホルダーに表示する内容を代入
         placeholder.text = "数字だけランダムで色がつきます"
         // UITextViewのDelegateを設定している
-        textNumberColorful.delegate = self
+        numberColorfulText.delegate = self
         // オートレイアウトを使用するためfalse
-        textNumberColorful.translatesAutoresizingMaskIntoConstraints = false
+        numberColorfulText.translatesAutoresizingMaskIntoConstraints = false
         // 親にViewを追加する
-        view.addSubview(textNumberColorful)
+        view.addSubview(numberColorfulText)
         view.addSubview(placeholder)
     }
     

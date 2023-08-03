@@ -12,22 +12,22 @@ import UIKit
 class KanjiBigTextEditorController: UIViewController, UITextViewDelegate {
     
     // テキストエディター
-    @IBOutlet weak var textKanjiBig: UITextView!
+    @IBOutlet weak var kanjiBigText: UITextView!
     // プレースホルダ
     @IBOutlet weak var placeholder: UILabel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         // 初期値を代入
-        textKanjiBig.text = ""
+        kanjiBigText.text = ""
         // プレースホルダーに表示する内容を代入
         placeholder.text = "漢字だけ大きくなります"
         // UITextViewのDelegateを設定している
-        textKanjiBig.delegate = self
+        kanjiBigText.delegate = self
         // オートレイアウトを使用するためfalse
-        textKanjiBig.translatesAutoresizingMaskIntoConstraints = false
+        kanjiBigText.translatesAutoresizingMaskIntoConstraints = false
         // 親にViewを追加する
-        view.addSubview(textKanjiBig)
+        view.addSubview(kanjiBigText)
         view.addSubview(placeholder)
     }
     

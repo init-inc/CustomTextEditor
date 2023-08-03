@@ -12,22 +12,22 @@ import UIKit
 class BackgroundRedTextEditorController: UIViewController, UITextViewDelegate {
     
     // テキストエディター
-    @IBOutlet weak var textBackgroundRed: UITextView!
+    @IBOutlet weak var backgroundRedText: UITextView!
     // プレースホルダ
     @IBOutlet weak var placeholder: UILabel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         // 初期値を代入
-        textBackgroundRed.text = ""
+        backgroundRedText.text = ""
         // プレースホルダーに表示する内容を代入
         placeholder.text = "文字数を超過すると背景が赤くなります"
         // UITextViewのDelegateを設定している
-        textBackgroundRed.delegate = self
+        backgroundRedText.delegate = self
         // オートレイアウトを使用するためfalse
-        textBackgroundRed.translatesAutoresizingMaskIntoConstraints = false
+        backgroundRedText.translatesAutoresizingMaskIntoConstraints = false
         // 親にViewを追加する
-        view.addSubview(textBackgroundRed)
+        view.addSubview(backgroundRedText)
         view.addSubview(placeholder)
     }
     

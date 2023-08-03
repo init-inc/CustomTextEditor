@@ -99,6 +99,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
+                        <viewLayoutGuide key="safeArea" id="uP5-Fj-dtg"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="AS1-rY-WmC" firstAttribute="top" secondItem="IFu-h8-aZH" secondAttribute="top" id="1r2-64-Unw"/>
@@ -109,8 +110,8 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="backgroundRedText" destination="Az4-xo-o8Q" id="OSn-Jm-CML"/>
                         <outlet property="placeholder" destination="AS1-rY-WmC" id="qIC-PR-bxx"/>
-                        <outlet property="textBackgroundRed" destination="Az4-xo-o8Q" id="3Bf-8H-1vL"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="aJD-Xh-lh3" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -147,6 +148,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
+                        <viewLayoutGuide key="safeArea" id="RrF-al-oPT"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="0p4-9N-odx" firstAttribute="leading" secondItem="Qxy-el-Khq" secondAttribute="leading" id="73q-64-vdq"/>
@@ -157,8 +159,8 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="numberColorfulText" destination="0p4-9N-odx" id="4uF-9z-H8z"/>
                         <outlet property="placeholder" destination="NZS-X3-zPg" id="MhP-5r-2Od"/>
-                        <outlet property="textNumberColorful" destination="0p4-9N-odx" id="c2q-jL-XMh"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Do6-YY-gLB" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -195,6 +197,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
+                        <viewLayoutGuide key="safeArea" id="4rC-oR-duy"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="w7L-vs-FPs" firstAttribute="leading" secondItem="r34-DI-ugk" secondAttribute="leading" id="ZQi-AM-zvh"/>
@@ -205,8 +208,8 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="kanjiBigText" destination="AuI-W4-UCZ" id="1oP-5U-LNQ"/>
                         <outlet property="placeholder" destination="w7L-vs-FPs" id="sbR-tF-shm"/>
-                        <outlet property="textKanjiBig" destination="AuI-W4-UCZ" id="pOd-N6-88s"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6iU-3n-1Uv" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
